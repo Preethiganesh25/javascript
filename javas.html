@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="javascript.js"></script>
+</head>
+<body>
+<h1>Learning Javascript</h1>
+<script>
+	var a=1;
+	var b=2;
+	var c=a+b;
+	//alert(c);
+	//for(var i=10;i<50;i++)
+	//{
+		//console.log(i);
+	//}
+	//var i=10;
+	//while(i<18)
+	//{
+	//	console.log(i);
+	//	i++;
+	//}
+	//var no3=[1,5,9,3];
+	//no3.forEach(function(no4){
+	//	console.log(no4);
+	//}
+	//);
+	//conditions
+	//var a1=10;
+	//var a4=10;
+	//var a6=9;
+	//if(a1==a4 && a6==98 ){
+	//	console.log("true");
+	//}
+	//else{
+	//	console.log("false");
+	//}
+	//switch case
+	//var color="";
+	//switch(color){
+	//	case "yellow":console.log("i love yellow");
+	//	break;
+	//	case"blue":console.log("that's okiee");
+	//	break;
+		//default:console.log("choose your color");
+		//break;
+	//	default:alert("choose your color");
+	//}
+	//object literals,object is defined by {}, we should not terminate using semi colon we should use only comma(,) and not in last 
+	var person={
+		fname:"preethi",//assignment operator is not used here we have to use colon
+		lname:"ganesh",
+		age:20,
+		familymem:["maragatha","dhanush"],
+	//console.log(person.fname+" "+person.lname);//here we use person bcoz its object for following
+// embeded object (creating an object inside the object is called embeded object)
+address:{//here address is also an object so object can't be called inside an object so we have mention in cosole
+	street:"agraharam",
+	town:"Gudalur",
+	state:"TN"
+	//console.log(person.familymem[0]);
+
+}
+}
+//object constructors(mostly used)
+//animal.name1="tiger";
+//animal.type1="haunt";
+//animal.color1="tiger";
+
+
+//console.log(animal.type1);
+//function with object (if we have to find many animals it takes to long and length so to make it easy we use function call) it is like creating a template and calling it againg for the output
+function animal(name,type,color){
+	this.name=name;
+	this.type=type;
+	this.color=color;
+}
+var tiger=new animal("tiger","wild","orange");
+var rabbit=new animal("rabbit","domestic","white");
+console.log(tiger);
+
+</script>
+</body>
+</html>
